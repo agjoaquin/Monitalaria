@@ -58,3 +58,24 @@ Dos filtros en serie: prefiltro (partículas grandes) + HEPA (gérmenes, hongos,
 
 ## Glosario (TP pág 31)
 Descarga: extracción al exterior. Recirculación: fracción de aire no descargado, mezclado con aire exterior (eficiencia energética). Renovaciones-hora: veces que se cambia el volumen de aire en 1 h. Arrestancia: % de captura de partículas grandes por el filtro.
+
+---
+## Complemento — Guía de práctica, Guía Nº 9 (pág 78-84)
+Fuente: `Clases actualizadas/Guía de práctica/Guía de práctica 2026.pdf`
+
+### Alcance del rol del ingeniero (importante para encuadrar una respuesta de final)
+La cátedra aclara explícitamente que en climatización **no se calculan cargas térmicas, ni se diseñan conductos, ni se dimensionan potencias de equipos**. La función es **asesorar sobre el tipo de equipos y las etapas de filtrado necesarias** para cumplir la normativa vigente.
+
+### Procedimiento sugerido para resolver un caso
+1. Definir explícitamente los ambientes/locales/servicios a climatizar y ventilar.
+2. Usar como guía los requisitos mínimos normativos (PNGCAM, `servicios-hospitalarios-resoluciones.md`) y la **Tabla 1 "Parámetros de referencia según local"** (pág 83 del PDF — es una imagen, no transcripta; abrir el PDF fuente si se necesita el valor puntual de un local no cubierto en los resúmenes), considerando como mínimo: relación de presión con áreas adyacentes, cambios de aire nuevo mínimos/hora, cambios de aire total mínimos, HR%, temperatura de diseño, nivel de filtración mínimo por etapa (ASHRAE/EN 779/EN 1822, ya resumidos arriba).
+3. Elegir el tipo de equipo de AA/ventilación según las exigencias de cada área, explicitando las etapas de filtrado.
+4. Volcar en el plano las condiciones ambientales exigidas y, en un apartado, el equipamiento y acondicionamiento sugerido.
+
+### Tipos de equipo (ejemplos con nombre específico usados en la guía)
+Además de los ya resumidos (Rooftop, UTA, Split, Fan Coil, VRV/VRF): **Split cassette** (de techo, embutido), **baja silueta con conductos** (equipo compacto oculto en cielorraso, distribuye por ductos cortos), **Split mural individual** (equipo de pared estándar).
+
+### Ejercicios de práctica (pág 84)
+1. Para el servicio asignado en el TP integrador: análisis técnico de los requerimientos mínimos para climatizarlo, usando el plano del servicio (indicar condiciones/parámetros de la Tabla 1 por local), tipo de equipo y filtros necesarios. *(Requiere el plano y el servicio asignado del TP integrador — dato específico de cátedra no incluido en este corpus; pedir el enunciado puntual si se va a resolver.)*
+2. Asesoramiento para climatizar una central de esterilización de un establecimiento nivel III B, manteniendo los equipos split murales actuales (evaluar si cumplen norma o qué debe agregarse: filtrado, renovaciones, etc., según el servicio "Esterilización" no tiene requisitos de climatización específicos citados en `servicios-hospitalarios-resoluciones.md` — aclarar el faltante si se resuelve).
+3. Climatizar sala de racks de un nuevo equipo de hemodinamia: requisito del fabricante T=20°C, HR≤40%. Indicar requerimientos a solicitar a la empresa de climatización, considerando todo el servicio (comparar contra los parámetros de hemodinamia de `servicios-hospitalarios-resoluciones.md`: sala de procedimiento con filtros HEPA 99,97% terminal). Esquematizar en croquis.

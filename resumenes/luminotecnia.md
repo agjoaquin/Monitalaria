@@ -44,6 +44,33 @@ Fuentes (2 archivos en `Clases actualizadas/Luminotecnia/`):
 ## Depreciación de la eficiencia luminosa (pág 28)
 Disminución progresiva de iluminancia por ensuciamiento de lámparas/superficies y depreciación del flujo → programa de mantenimiento y sustitución.
 
+---
+## Complemento — Guía de práctica, Guía Nº 5: Diseño de alumbrado de interiores (pág 44-49)
+Fuente: `Clases actualizadas/Guía de práctica/Guía de práctica 2026.pdf`
+
+### Método de los lúmenes — procedimiento de cálculo completo
+Para dimensionar el alumbrado general de un local (nº de luminarias), 8 puntos:
+1. **Nivel de iluminación requerido (E)**: valor mínimo tabulado según tarea visual (ver Tabla de niveles ya resumida arriba).
+2. **Elección del tipo de luminaria**: según la actividad; evitar deslumbramiento, dar bienestar visual.
+3. **Índice del local (k)**: número entre 1 y 10 (valores >10 se toman como 10, diferencia despreciable), calculado a partir de la geometría del local (ancho, largo, altura entre luminaria y plano de trabajo — 0,85 m salvo que se ajuste). *(la fórmula completa de k está en la imagen del PDF, pág 44; no transcripta — abrir PDF si se necesita el detalle exacto)*.
+4. **Coeficientes de reflexión** de techo, paredes y suelo: tabulados según material/acabado.
+5. **Coeficiente de utilización (η)**: relación entre los lúmenes que llegan al plano de trabajo (0,85 m sobre el suelo) y los lúmenes totales de la lámpara. Depende de k y de los factores de reflexión; tabulado por el fabricante de cada luminaria (puede superar 1 por reflexiones múltiples).
+6. **Factor de conservación/mantenimiento (fm)**: por envejecimiento de lámparas y suciedad de luminarias. Si el fabricante no lo da: **ambiente limpio fm=0,8**; **ambiente sucio fm=0,6**.
+7. **Flujo luminoso total requerido**:
+   **ΦT = E·S / (η·fm)**  (E = iluminancia media deseada [lx], S = superficie del plano de trabajo [m²])
+   **Número de luminarias: N = ΦT / (n·ΦL)**  (n = lámparas por luminaria, ΦL = flujo de 1 lámpara [lm])
+8. **Emplazamiento**: luminarias distribuidas uniformemente en filas paralelas a los ejes de simetría (locales rectangulares); separación máxima según ángulo de apertura del haz y altura de montaje (mayor apertura/altura → más superficie cubierta pero menor iluminancia en el plano); luminarias cercanas a la pared, a la mitad de la distancia entre filas.
+
+**Comprobación de resultados**: Em = N·ΦL·η·fm / S  debe ser **≥ Etablas** (iluminancia recomendada).
+
+### Equivalencias LED vs. incandescente (orientativo, pág 58)
+Ejemplos: 1×3W LED ≈ 100-200 lm ≈ 15 W incandescente; 9W LED ≈ 680-800 lm ≈ 50-80 W incandescente; 18W LED ≈ 1300-1500 lm ≈ 140 W incandescente; 40W LED ≈ 2850-3600 lm ≈ 120-270 W incandescente. (Tabla completa en el PDF fuente pág 58.)
+
+### Ejercicios de práctica (pág 49)
+1. Sala de traumatología: 7,30×12,20×2,75 m (ancho×largo×alto). Reflexión techo 80%, paredes 50%, plano de trabajo 10%, buena conservación de luz. Diseñar el alumbrado (aplicar el método de los lúmenes completo).
+2. Pasillo: 3,05×21,25×3,20 m. Reflexión techo 80%, paredes 50%, plano de trabajo 30%, buena conservación de luz. Diseñar el alumbrado.
+3. UTI de 10 camas: diseñar el alumbrado general y calcular tipo y potencia de la lámpara de examen en cada cabecera de cama (considerar dimensiones de la sala y demás factores de diseño; para la lámpara de examen ver niveles de la Tabla de niveles de iluminación — "cuidados intensivos" y "emergencia y cirugía" según el uso).
+
 ## Lámpara scialítica (archivo 09, pág 2-10)
 Luminaria de quirófano: iluminación homogénea, alta intensidad, **sin calor** y **sin sombras** (elimina sombras de manos/instrumentos). No distorsiona el color de los tejidos.
 ### Características (pág 3)
