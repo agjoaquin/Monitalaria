@@ -1,0 +1,22 @@
+# Unidad 3 — Protecciones eléctricas
+
+¿Características principales de las protecciones? (rapidez y selectividad)
+Toda protección debe cumplir dos condiciones: rapidez, actuar en el menor tiempo posible ante una falla para minimizar el daño térmico/mecánico y el riesgo para las personas (ej. el diferencial debe abrir en ≤30 ms); y selectividad, desconectar únicamente el tramo afectado por la falla (la protección más próxima a ella) sin sacar de servicio al resto de la instalación. Ambas propiedades a veces compiten entre sí y por eso se coordinan las protecciones en cascada.
+
+¿Tipos de protecciones y qué protege cada una?
+Fusible: corta el circuito por fusión de un elemento calibrado; protege principalmente contra cortocircuitos (también sobrecargas si es de fusión lenta). Relé térmico: protege ante sobrecargas pequeñas y prolongadas (uso típico en motores). Interruptor termomagnético: combina protección térmica (bimetal, para sobrecargas) + magnética (bobina, para cortocircuitos) en un mismo dispositivo. Disyuntor/interruptor diferencial: protege contra contactos directos e indirectos y fugas/derivaciones a tierra (protección de personas); no protege contra sobrecargas ni cortocircuitos, por eso siempre se combina con una protección térmica/magnética.
+
+¿Defina coordinación de protecciones, con tipos de selectividad?
+Coordinar protecciones significa dimensionarlas en cascada para que, ante una falla, se abra solo la protección más próxima a ella (aguas abajo), sin afectar el resto del sistema. Dos técnicas: selectividad amperométrica (se separan los umbrales de corriente de disparo instantáneo/de corto retardo entre protecciones sucesivas; se usa en distribución terminal) y selectividad cronométrica (se escalonan los tiempos de disparo entre protecciones sucesivas, dando siempre más tiempo a la que está más lejos de la carga).
+
+¿Curva de accionamiento de un fusible?
+Es una curva de tipo inverso (tiempo de fusión vs. corriente): a mayor corriente de falla, menor el tiempo que tarda en fundirse. Los fusibles se clasifican en rápidos (fusión instantánea, para protección general) y retardados (fusión demorada, usados en protección de motores porque toleran la corriente de arranque elevada sin fundirse innecesariamente).
+
+¿Curva de accionamiento de una llave termomagnética?
+Es una curva tiempo-corriente con 3 zonas: Zona A (térmica), gobernada por el bimetal, de actuación lenta e inversamente proporcional a la corriente (para sobrecargas); Zona B (magnética), gobernada por la bobina, de actuación prácticamente instantánea a partir de cierto múltiplo de la corriente nominal (para cortocircuitos); Zona C, de transición entre ambas. Según dónde arranca la zona magnética se definen los tipos: B (dispara entre 3-5×In, sin arranque de motores), C (5-10×In, el más usado en general) y D (10-20×In, para motores o transformadores con picos de arranque altos).
+
+¿Reglas de dimensionamiento de fusibles y termomagnéticas entre sí, considerándolas como protecciones primarias y secundarias?
+Para que dos protecciones en cascada coordinen bien (que actúe primero la más cercana a la falla): fusible con fusible → Infa > 1,6·Infp (recomendado más de 2×), donde Infa es el fusible más alejado de la carga y Infp el más cercano (ej.: cercano 16 A, alejado 25 A); fusible con interruptor termomagnético → Inf > 1,2·InfI; termomagnético con termomagnético → Ina > 2·Inp (Ina el más alejado, Inp el más cercano; si son regulables, se usa la corriente térmica ajustada). La protección magnética (instantánea) es más difícil de coordinar en corrientes altas por no tener temporización, así que conviene separar bien los umbrales de disparo magnético entre protecciones sucesivas.
+
+¿Cómo se elige el valor de las protecciones termomagnéticas? (Inom, Imax, Itmg)
+Una vez elegida la sección del conductor por su corriente de carga, la protección se selecciona cumpliendo: Ic ≤ InI ≤ Iadc (la corriente de carga del circuito debe ser menor o igual a la corriente nominal del interruptor, y esta a su vez menor o igual a la corriente admisible del conductor) y Ift ≤ 1,45·Iadc (la corriente de funcionamiento de la protección térmica en menos de 1 hora no debe superar 1,45 veces la admisible del conductor). Como el fabricante garantiza que Ift ≤ 1,45·InI, cumpliendo la primera condición se cumple automáticamente la segunda. Además, la corriente nominal del interruptor no debe superar en más de un 25% la corriente de carga nominal del circuito, y se elige dentro de la serie preferencial: 5-10-15-20-25-32-40-50-63-80-100 A.

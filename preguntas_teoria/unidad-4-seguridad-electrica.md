@@ -1,0 +1,28 @@
+# Unidad 4 — Seguridad eléctrica y puesta a tierra
+
+¿Clasificación de los equipos según IEC 60601?
+Por su tipo de protección eléctrica: Clase I (aislamiento básico + conexión obligatoria a tierra de protección de la carcasa), Clase II (aislamiento reforzado o doble, no depende de la puesta a tierra) y alimentación interna (equipos que se alimentan de una fuente propia, ej. batería, sin depender de la red). Por el grado de protección del paciente según la parte aplicada: Tipo B (protección básica, sin contacto directo con el corazón), Tipo BF (parte aplicada flotante, aislada eléctricamente del resto del equipo, pero sin conexión directa al corazón) y Tipo CF (máximo grado de protección: parte aplicada flotante apta para conexión directa al corazón, ej. catéteres o electrodos intracardíacos, reduce el riesgo de microchoque).
+
+¿Defina corriente de desprendimiento?
+Es la máxima corriente que le permite a una persona, al entrar en contacto con un conductor energizado, soltarlo voluntariamente por su propia fuerza muscular. Por encima de ese valor, la contracción muscular involuntaria (tetanización) se lo impide. En corriente alterna de 50/60 Hz el umbral típico ronda los 10 mA (con variación según la persona: ~9 mA en hombres, ~6 mA en mujeres). Es un concepto relacionado pero distinto al de fibrilación ventricular por microchoque (que ocurre con corrientes del orden de µA cuando la vía es interna al cuerpo).
+
+¿Defina Microshock?
+Choque eléctrico accidental al que puede quedar expuesto un paciente cuando, por una práctica médica (estudio o tratamiento), se accede al interior del cuerpo mediante un dispositivo conductor (ej. catéter) que puede estar próximo o en contacto con el corazón. Es extremadamente peligroso porque corrientes del orden de los µA pueden disparar una fibrilación ventricular.
+
+¿Defina Macroshock?
+Choque eléctrico accidental al que puede quedar expuesta una persona por un contacto externo, con piel intacta, directo o indirecto, con un elemento bajo tensión.
+
+¿Clasifique y caracterice las tierras según su función?
+PAT de servicio: conecta el conductor neutro de la instalación a un electrodo de tierra; estabiliza el potencial eléctrico, evita sobre/subtensiones que pueden surgir si el neutro queda flotante, y disipa las corrientes de retorno en sistemas trifásicos desequilibrados. PAT de protección: conecta a tierra todas las superficies metálicas no conductoras de un circuito (carcasas, tableros, cañerías); protege a personas y equipos de contactos indirectos con partes que accidentalmente puedan energizarse por una falla, dirigiendo la corriente de fuga a tierra.
+
+¿De qué depende la resistividad del terreno?
+Depende de 4 factores propios del suelo: humedad (factor de mayor incidencia; la conducción en el terreno es electrolítica, a través del agua que disuelve las sales del suelo, así que a mayor humedad menor resistividad; óptimo 30-35%, por debajo de 20% la resistencia sube mucho), temperatura (al enfriarse el suelo disminuye la movilidad iónica y aumenta la resistencia; incidencia mínima por encima de 0°C, sube mucho por debajo de -2/-3°C), naturaleza/composición del suelo (varía mucho según el tipo de terreno, desde decenas de Ω·m en suelos orgánicos húmedos hasta miles de Ω·m en terrenos graníticos secos; los suelos de grano fino como la arcilla conducen mejor que los de grano medio/grueso como arena o grava), y concentración de sales disueltas (el agua pura es aislante, las sales disueltas la vuelven conductora; por eso una técnica habitual para bajar la resistividad de un terreno es agregar sal y regar cerca del electrodo).
+
+¿Explique el método Nippold o de los 3 puntos?
+Se colocan dos tomas de tierra auxiliares (de resistencias R2 y R3), además de la toma bajo ensayo (R1). Con un puente de corriente alterna se miden las resistencias combinadas entre cada par de tomas: R1-2, R2-3 y R1-3. La resistencia de la toma bajo ensayo se despeja como R1 = (R1-2 + R1-3 − R2-3) / 2. Es importante que las resistencias de los electrodos auxiliares sean del mismo orden que la que se espera medir: si son mucho mayores, el error se amplifica en el resultado.
+
+¿Explique el método Behrend (del 62%)?
+Es una variante simplificada del método de caída de potencial, con 3 electrodos alineados: el electrodo bajo prueba (E), un electrodo auxiliar de corriente (C) y un electrodo auxiliar de potencial (P). Se hace circular corriente entre E y C, y se mide la caída de tensión con P; por ley de Ohm (V/I) se obtiene la resistencia. La particularidad del método es que P se ubica al 62% de la distancia entre E y C, lo que minimiza la influencia mutua entre electrodos y permite una lectura representativa con una sola medición (en vez de recorrer toda la curva). Para verificar el resultado, se repite la medición con P al 52% y al 72% de la distancia; si los tres valores son similares, la medición es válida.
+
+¿Explique el método voltamperométrico o de caída de tensión?
+Es el método tradicional para medir la resistencia de puesta a tierra con un telurómetro: la jabalina bajo ensayo se desconecta de la instalación (para evitar interferencias) y se colocan dos picas auxiliares en línea recta a distancias crecientes. Se hace circular una corriente conocida entre la jabalina bajo ensayo y la pica de corriente, y se mide la caída de tensión con la pica de potencial; por ley de Ohm (V/I) se obtiene la resistencia. Se toman varias mediciones desplazando la pica de potencial, y el valor se considera válido cuando se llega a la zona de la curva donde la resistencia se estabiliza (variación menor al 30% entre lecturas sucesivas).
